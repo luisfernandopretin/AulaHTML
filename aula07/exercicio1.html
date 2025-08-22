@@ -6,13 +6,10 @@
     <title>Document</title>
 <style>
 
-h1
+.h1
 {
-background-color:rgb(5, 84, 14);
 color: white;
-padding: 40px;
-margin: 40px;
-text-align: center;
+font-size: 16px;
 }
 h2
 {
@@ -22,6 +19,7 @@ h2
 
 p
 {
+
     font-family: sans-serif
 }
 
@@ -36,41 +34,78 @@ margin: 20px;
 .border
 {
     border: 1px solid green;
-    padding: 10px;
-    margin: 10px;
+   padding: 20px;
+  }
+
+.titulozin
+{
+    color: white;
+text-align: center;
+background-color: rgb(4, 70, 4);
+font-size: 40px;
+padding: 40px;
+margin: 40px;
 }
 
+table,th,td
+{
+border: 1px solid black;
+border-collapse: collapse;
+padding: 5px;
+margin: 40px;
+}
 
+.espaco
+{
+    margin: 40px;
+}
+.destaque
+{
+    background-color: green;
+    color: white;
+}
 
-
-
+.escola
+{
+    text-align: center;
+    color: gray;
+    margin: 40px;
+}
 
 
 </style>
 </head>
 <body>
     
-<h1>Página de Exercícios de CSS</h1>
+<p class="titulozin">
+    Pagina de Exercicios CSS
+<br><a href="#" class="h1">inicio</a>
+<a href="#" class="h1">sobre</a>
+<a href="#" class="h1">contrato</a>
+
+
+
+</p>
  
 <h2>1. Parágrafos e Cores</h2>
 
-<p class="border">
+<p class="border espaco">
 Este é um parágrafo simples para aplicar cor,margem,padding e outras propriedades do CSS.
 </p>
 
-<p class="border">
+<p class="border espaco" >
     Você pode aplicar diferentes fontes, tamanhos, cores e espaçamentos aqui
 </p>
 
 
 <h2>2. Botões e interações</h2>
 
-<p><span class="cor">Clique aqui</span></p>
+<p><span class="cor espaco" >Clique aqui</span></p>
 
 
-<h2>Lista de Itens</h2>
+<h2>3. Lista de Itens</h2>
 
-<ul class="border">
+<ul class="border espaco">
 <li>HTML</li>
 <li>CSS</li>
 <li>JavaScript</li>
@@ -78,9 +113,33 @@ Este é um parágrafo simples para aplicar cor,margem,padding e outras proprieda
 
 </ul>
 
-<h2>Tabela de Estilo</h2>
+<h2>4. Tabela de Estilo</h2>
+
+<table>
+<tr class="destaque">
+<th>Nome</th>
+<th>Idade</th>
+<th>Cidade</th>
+</tr>
 
 
+<tr>
+<td>João</td>
+<td>25</td>
+<td>São Paulo</td>
+</tr>
+
+<tr>
+<td>Ana</td>
+<td>30</td>
+<td>Rio de Janeiro</td>
+</tr>
+
+</table>
+
+<p class="escola">
+    ETEC Francisco Garcia
+</p>
 
 </body>
 </html>
