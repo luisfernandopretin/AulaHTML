@@ -12,7 +12,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 85vh;
-
+font-family: Arial, Helvetica, sans-serif;
 }
 .quadro
 {
@@ -50,17 +50,29 @@ color: white;
 height: 75px;
 display: flex;
 align-items: center;
-padding-left: 1opx;
+padding-left: 10px;
 }
 
 .linha2
 {
 height: 72px;
+padding-left: 10px;
+}
 
+.senha
+{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+a
+{
+text-decoration: none;
+color:#068ee2  ;
 
 
 }
-
 
 </style>
 
@@ -73,11 +85,30 @@ height: 72px;
     <div>
         <form action="">
         <div class="linha1">
-        Entrar como <input type="text">
+       <b>Entrar como:</b>  <input type="text">
         
-        Cod. Etec: <input type="text">
+        <b>Cod. Etec:</b>   <input type="text">
         </div>
         </form>
+
+        <div>
+<form action="">
+<div class="linha2">
+<b>RM:</b> <input type="text">
+
+<b>Senha:</b> <input type="text">
+
+</div>
+
+</form>
+
+        </div>
+
+
+<div class="senha">
+<a href="">Solicitar nova senha</a>
+
+</div>
 
 
 
@@ -91,7 +122,7 @@ height: 72px;
 
 
 <div class="rodape">
-   Sistema NSA - Desde 2008
+   Sistema NSA - Desde 2008 
 </div>
 
 </div>
